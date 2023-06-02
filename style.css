@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+body {
+    background: url(/images/pattern-background-desktop.svg) no-repeat;
+    background-color: var(--Paleblue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+.image-top {
+    width: 301px;
+}
+
+.image-top .img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content {
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.content h2 {
+    color: var(--Darkblue);
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: var(--Desaturatedblue);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: #f1f3fa;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85%;
+    min-height: 90px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.music-icon {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.text h3 {
+    color: var(--Darkblue);
+}
+
+.text p {
+    color: var(--Desaturatedblue)
+}
+
+.link a {
+    color: var(--Brightblue);
+    font-weight: 700;
+}
+
+.link a:hover{
+    text-decoration: none;
+    color:hsla(245, 75%, 52%, 0.849) ;
+}
+
+.first-btn {
+    display: block;
+    padding: 1rem;
+    margin: 20px 1rem;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: var(--Brightblue);
+    color:#f1f3fa ;
+    box-shadow: 0px 10px 10px hsla(245, 75%, 52%, 0.281);
+}
+ 
+.first-btn:hover {
+    background-color:hsla(245, 75%, 52%, 0.849) ;
+}
+
+.cancel {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--Desaturatedblue);
+}
